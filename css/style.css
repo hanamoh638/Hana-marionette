@@ -3,6 +3,7 @@ body {
   color: #0c0c0c;
   background-color: #ffffff;
   overflow-x: hidden;
+   padding: 5px;
 }
 
 .layout_padding {
@@ -42,12 +43,13 @@ body {
           align-items: flex-start;
 }
 
+.heading_container h3,
 .heading_container h2 {
   position: relative;
   font-weight: bold;
 }
 
-.heading_container h2 span {
+.heading_container h3 span ,.heading_container h2 span{
   color: orangered;
 }
 
@@ -104,6 +106,12 @@ a:focus {
   color: #555555;
 }
 
+/* 
+.header_section .header_top .contact_nav a:active {
+  margin-right: 25px;
+  color: p;
+}  */
+
 .header_section .header_top .contact_nav a i {
   color: orangered;
 }
@@ -139,6 +147,11 @@ a:focus {
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link {
+  color: purple;
+}
+
+
+.custom_nav-container .navbar-nav .nav-item:hover .nav-link :active {
   color: purple;
 }
 
@@ -508,7 +521,7 @@ a:focus {
   width: 100%;
 }
 
-.treatment_section .heading_container h2 {
+.treatment_section .heading_container h2,.treatment_section .heading_container h3 {
   text-transform: none;
 }
 
@@ -550,12 +563,14 @@ a:focus {
   margin-bottom: 45px;
 }
 
+.team_section .heading_container h3 ,
 .team_section .heading_container h2 {
   color: #000000;
   text-transform: uppercase;
   margin: 0;
 }
 
+.team_section .heading_container h3 span,
 .team_section .heading_container h2 span {
   color: #ffffff;
 }
@@ -981,4 +996,8 @@ a:focus {
 
 .card:hover {
   transform: scale(1.1);
+}
+
+.nav-link :hover{
+  color: aqua;
 }
